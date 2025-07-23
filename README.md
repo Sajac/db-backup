@@ -26,9 +26,9 @@ DB_NAME=mydatabase      # Название БД
 
 Убедитесь, что установлены утилиты:<br>  
 
-Для PostgreSQL: pg_dump (пакет postgresql-client).<br> 
-Для MariaDB: mysqldump  (пакет mariadb-client).<br> 
-Также нужен gzip, bash.<br> 
+Для PostgreSQL: pg_dump (пакет postgresql-client)<br> 
+Для MariaDB: mysqldump  (пакет mariadb-client)<br> 
+Также нужен gzip, bash<br> 
 
 Проверить что пакет установлен:
 ```
@@ -43,7 +43,7 @@ sudo apt install postgresql-client mariadb-client gzip
 
 ## Пример логов
 
-```log
+```diff
 2025-07-23 14:01:12 [SUCCESS] Backup created: mydatabase-2025-07-23_14-01.sql.gz, Size: 15M
 2025-07-23 14:05:12 [ERROR] Backup failed for mydatabase
 2025-07-23 14:10:33 [SUCCESS] Backup created: mydatabase-2025-07-23_14-10.sql.gz, Size: 16M
