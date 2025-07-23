@@ -65,8 +65,8 @@ crontab -e
 ## Возможные ошибки работы скрипта через cron
 
 При добавлении задания в cron к пользователю не root может быть ошибка с доступом к папке `/opt/backups` <br>
-Решение: выдать нужному пользователю права на папку:
+**Решение:** выдать нужному пользователю права на папку:
 ```
-sudo chown  backupuser /opt/backups
+sudo chown backupuser /opt/backups
 sudo chmod 700 /opt/backups
 ```
