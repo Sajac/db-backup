@@ -6,9 +6,9 @@
 
 Скрипт `db-backup.sh` создает сжатые дампы базы данных, логирует действия и хранит только последние 7 дампов, удаляя более старые.
 
-По умолчанию:  
-Бэкапы хранятся в каталоге `/opt/backups`. 
-Логи хранятся в файле `/var/log/db-backup.log`. 
+По умолчанию:<br>
+Бэкапы хранятся в каталоге `/opt/backups`<br>
+Логи хранятся в файле `/var/log/db-backup.log`<br>
 
 ## Настройка .env
 
@@ -24,11 +24,11 @@ DB_NAME=mydatabase      # Название БД
 
 ## Установка зависимостей
 
-Убедитесь, что установлены утилиты:  
+Убедитесь, что установлены утилиты:<br>  
 
-Для PostgreSQL: pg_dump (пакет postgresql-client). 
-Для MariaDB: mysqldump  (пакет mariadb-client). 
-Также нужен gzip, bash. 
+Для PostgreSQL: pg_dump (пакет postgresql-client).<br> 
+Для MariaDB: mysqldump  (пакет mariadb-client).<br> 
+Также нужен gzip, bash.<br> 
 
 Проверить что пакет установлен:
 ```
