@@ -28,7 +28,7 @@ DB_NAME=mydatabase      # Название БД
 
 Для PostgreSQL: pg_dump (пакет postgresql-client)<br> 
 Для MariaDB: mysqldump  (пакет mariadb-client)<br> 
-Также нужен gzip, bash<br> 
+Также нужен gzip<br> 
 
 Проверить что пакет установлен:
 ```
@@ -60,7 +60,8 @@ crontab -e
 ```
 0 2 * * * /path/to/db-backup.sh >> /var/log/db-backup.log 2>&1
 ```
-Это запустит скрипт каждый день в 2:00 ночи.
+Это запустит скрипт каждый день в 2:00 ночи.<br>
+Для точного определения времени в cron можно воспользоваться [Сервисом](https://crontab.guru)
 
 ## Возможные ошибки работы скрипта через cron
 
